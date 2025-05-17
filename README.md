@@ -8,4 +8,5 @@ git clone https://github.com/supremXD/zshrcmaker
 cp zshrcmaker/zshrcmaker.py .
 python3 zshrcmaker.py
 ```
-After last command, follow the instructions given in the output of the zshrcmaker.py.
+After last command, follow the instructions given in the output of the zshrcmaker.py, and make sure to change the alias
+directorys to your owns.
