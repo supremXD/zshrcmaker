@@ -17,6 +17,8 @@ def install():
 	os.system("echo alias apachedown='sudo service apache2 stop' >> .zshrc")
 	os.system("echo alias wichsystem='python3 /home/suprem/Documents/commandsshortucts/whichsystem.py' >> .zshrc")
 	os.system("echo alias debinstall='sudo dpkg -i' >> .zshrc")
+	os.system("alias autoserver='bash /home/suprem/Documents/commandsshortucts/autoserveranddownloading/autoserver/autoserver.sh'")
+	os.system("alias autodownload='bash /home/suprem/Documents/commandsshortucts/autoserveranddownloading/autodownload/autodownload.sh'")
 	os.system("clear")
 	print("")
 	print("Add this to the plugins part in the /home/suprem(.zshrc file: oh-my-matrix zsh-autosuggestions fast-syntax-highlighting zsh-history-substring-search web-search")
