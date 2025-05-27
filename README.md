@@ -1,4 +1,4 @@
-# INSTALLATION for Debian based OS.
+# INSTALLATION.
 + Instalation for Debian based OS.
 ```bash
 git clone https://github.com/supremXD/zshrcmaker
