@@ -17,7 +17,6 @@ def install():
 	os.system("echo alias debinstall='sudo dpkg -i' >> .zshrc")
 	os.system("echo alias autoserver='bash /home/suprem/Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh'")
 	os.system("echo alias autodownload='bash /home/suprem/Documents/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh'")
-	os.system("echo alias autodownload='bash /home/suprem/Documents/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh'")
 	os.system("echo alias temp="touch temp"")
 	os.system("echo alias mtemp="nano temp"")
  	os.system("echo alias rm%="rm -f temp"")
