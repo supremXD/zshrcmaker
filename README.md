@@ -1,11 +1,16 @@
-# INSTALLATION for Ubuntu/Debian based
-+ Instalation for Kali Linux
+# INSTALLATION for Debian based OS.
++ Instalation for Debian based OS.
 ```bash
-cd
-sudo apt install git wget zsh python3 -y
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 git clone https://github.com/supremXD/zshrcmaker
-cp zshrcmaker/zshrcmaker.py .
+sudo bash zshrcmaker/requirements.sh
+mv zshrcmaker/zshrcmaker.py .
+python3 zshrcmaker.py
+```
++ Instalation for Termux.
+```bash
+git clone https://github.com/supremXD/zshrcmaker
+bash zshrcmaker/requirements.sh
+mv zshrcmaker/zshrcmaker.py .
 python3 zshrcmaker.py
 ```
 After last command, follow the instructions given in the output of the zshrcmaker.py, and make sure to change the alias
