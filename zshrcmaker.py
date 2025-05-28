@@ -47,7 +47,10 @@ def kali():
     os.system("git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions")
     os.system("git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting")
     os.system("git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-history-substring-search")
-    os.system("git clone https://github.com/supremXD/commandshortcuts Documents/")
+    os.system("git clone https://github.com/supremXD/commandshortcuts")
+    os.system("mkdir -p Documents/commandshortcuts")
+    os.system("mv commandshortcuts/* Documents/commandshortcuts/")
+    os.system("rm -r commandshortcuts")
     os.system("sudo chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
     os.system("sudo chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
     aliases = [
