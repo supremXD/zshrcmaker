@@ -48,8 +48,8 @@ def kali():
     os.system("git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting")
     os.system("git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-history-substring-search")
     os.system("git clone https://github.com/supremXD/commandshortcuts Documents/")
-    os.system("chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
-    os.system("chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
+    os.system("sudo chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
+    os.system("sudo chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
     aliases = [
         'alias pythonserver="python3 -m http.server 8080"',
         'alias cls="clear"',
@@ -123,8 +123,8 @@ def other():
     os.system("git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting")
     os.system("git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-history-substring-search")
     os.system("git clone https://github.com/supremXD/commandshortcuts Documents/")
-    os.system("chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
-    os.system("chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
+    os.system("sudo chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
+    os.system("sudo chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
     aliases = [
         'alias pythonserver="python3 -m http.server 8080"',
         'alias cls="clear"',
