@@ -50,7 +50,7 @@ def kali():
     os.system("git clone https://github.com/supremXD/commandshortcuts")
     os.system("mkdir -p Documents/commandshortcuts")
     os.system("mv commandshortcuts/* Documents/commandshortcuts/")
-    os.system("rm -r commandshortcuts")
+    os.system("rm -rf commandshortcuts")
     os.system("sudo chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
     os.system("sudo chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
     aliases = [
@@ -90,8 +90,10 @@ def termux():
     os.system("git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions")
     os.system("git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting")
     os.system("git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-history-substring-search")
-    os.system("mkdir -p things/")
-    os.system("git clone https://github.com/supremXD/commandshortcuts things/")
+    os.system("mkdir -p things/commandshortcuts")
+    os.system("git clone https://github.com/supremXD/commandshortcuts")
+    os.system("mv commandshortcuts/* things/commandshortcuts")
+    os.system("rm -rf commandshortcuts")
     os.system("chmod +x /data/data/com.termux/files/home/things/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
     os.system("chmod +x /data/data/com.termux/files/home/things/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh")
     aliases = [
@@ -125,7 +127,10 @@ def other():
     os.system("git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions")
     os.system("git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting")
     os.system("git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-history-substring-search")
-    os.system("git clone https://github.com/supremXD/commandshortcuts Documents/")
+    os.system("git clone https://github.com/supremXD/commandshortcuts")
+    os.system("mkdir -p Documents/commandshortcuts")
+    os.system("mv commandshortcuts/* Documents/commandshortcuts/")
+    os.system("rm -rf commandshortcuts")
     os.system("sudo chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
     os.system("sudo chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
     aliases = [
