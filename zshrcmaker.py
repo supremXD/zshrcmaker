@@ -69,6 +69,7 @@ def kali():
         'alias temp="touch temp"',
         'alias mtemp="nano temp"',
         'alias rm%="rm -f temp"'
+		'alias macfinder="python3 /home/suprem/Documents/commandshortcuts/macfinder.py"
     ]
     for alias in aliases:
         os.system(f"echo '{alias}' >> ~/.zshrc")
