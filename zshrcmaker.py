@@ -70,6 +70,7 @@ def kali():
         'alias mtemp="nano temp"',
         'alias rm%="rm -f temp"'
 		'alias macfinder="python3 /home/suprem/Documents/commandshortcuts/macfinder.py"'
+		'alias autonmap="python3 /home/suprem/Documents/commandshortcuts/autonmap.py"'
     ]
     for alias in aliases:
         os.system(f"echo '{alias}' >> ~/.zshrc")
