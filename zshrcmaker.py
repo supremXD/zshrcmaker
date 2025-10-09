@@ -70,7 +70,8 @@ def kali():
         'alias mtemp="nano temp"',
         'alias rm%="rm -f temp"',
 		'alias macfinder="python3 /home/suprem/Documents/commandshortcuts/macfinder.py"',
-		'alias autonmap="python3 /home/suprem/Documents/commandshortcuts/autonmap.py"'
+		'alias autonmap="python3 /home/suprem/Documents/commandshortcuts/autonmap.py"',
+		'alias autosclose="python3 /home/suprem/Documents/commandshortcuts//autoserveranddownloading/autoserverclose.py"'
     ]
     for alias in aliases:
         os.system(f"echo '{alias}' >> ~/.zshrc")
@@ -107,7 +108,8 @@ def termux():
         'alias autodownload="bash /data/data/com.termux/files/home/things/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh"',
         'alias temp="touch temp"',
         'alias mtemp="nano temp"',
-        'alias rm%="rm -f temp"'
+        'alias rm%="rm -f temp"',
+		'alias autosclose="python3 /home/suprem/Documents/commandshortcuts//autoserveranddownloading/autoserverclose.py"'
     ]
     for alias in aliases:
         os.system(f"echo '{alias}' >> ~/.zshrc")
@@ -149,7 +151,8 @@ def other():
         'alias autodownload="bash /home/suprem/Documents/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh"',
         'alias temp="touch temp"',
         'alias mtemp="nano temp"',
-        'alias rm%="rm -f temp"'
+        'alias rm%="rm -f temp"',
+		'alias autosclose="python3 /home/suprem/Documents/commandshortcuts//autoserveranddownloading/autoserverclose.py"'
     ]
     for alias in aliases:
         os.system(f"echo '{alias}' >> ~/.zshrc")
