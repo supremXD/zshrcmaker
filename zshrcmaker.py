@@ -48,30 +48,30 @@ def kali():
     os.system("git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting")
     os.system("git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-history-substring-search")
     os.system("git clone https://github.com/supremXD/commandshortcuts")
-    os.system("mkdir -p Documents/commandshortcuts")
-    os.system("mv commandshortcuts/* Documents/commandshortcuts/")
+    os.system("mkdir -p ~/Documents/commandshortcuts")
+    os.system("mv commandshortcuts/* ~/Documents/commandshortcuts/")
     os.system("rm -rf commandshortcuts")
-    os.system("sudo chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
-    os.system("sudo chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
+    os.system("sudo chmod +x ~/Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
+    os.system("sudo chmod +x ~/Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
     aliases = [
         'alias pythonserver="python3 -m http.server 8080"',
         'alias cls="clear"',
         'alias bat="batcat"',
         'alias cat="/usr/bin/cat"',
-        'alias cptoserver="python3 /home/suprem/Documents/commandshortcuts/cptoserver.py"',
-        'alias mvtoserver="python3 /home/suprem/Documents/commandshortcuts/mvtoserver.py"',
+        'alias cptoserver="python3 ~/Documents/commandshortcuts/cptoserver.py"',
+        'alias mvtoserver="python3 ~/Documents/commandshortcuts/mvtoserver.py"',
         'alias apacheup="sudo service apache2 start"',
         'alias apachedown="sudo service apache2 stop"',
-        'alias wichsystem="python3 /home/suprem/Documents/commandshortcuts/whichsystem.py"',
+        'alias wichsystem="python3 ~/Documents/commandshortcuts/whichsystem.py"',
         'alias debinstall="sudo dpkg -i"',
-        'alias autoserver="bash /home/suprem/Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh"',
-        'alias autodownload="bash /home/suprem/Documents/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh"',
+        'alias autoserver="bash ~/Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh"',
+        'alias autodownload="bash ~/Documents/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh"',
         'alias temp="touch temp"',
         'alias mtemp="nano temp"',
         'alias rm%="rm -f temp"',
-		'alias macfinder="python3 /home/suprem/Documents/commandshortcuts/macfinder.py"',
-		'alias autonmap="python3 /home/suprem/Documents/commandshortcuts/autonmap.py"',
-		'alias autosclose="python3 /home/suprem/Documents/commandshortcuts//autoserveranddownloading/autoserverclose.py"'
+		'alias macfinder="python3 ~/Documents/commandshortcuts/macfinder.py"',
+		'alias autonmap="python3 ~/Documents/commandshortcuts/autonmap.py"',
+		'alias autosclose="python3 ~/Documents/commandshortcuts//autoserveranddownloading/autoserverclose.py"'
     ]
     for alias in aliases:
         os.system(f"echo '{alias}' >> ~/.zshrc")
@@ -97,19 +97,19 @@ def termux():
     os.system("git clone https://github.com/supremXD/commandshortcuts")
     os.system("mv commandshortcuts/* things/commandshortcuts")
     os.system("rm -rf commandshortcuts")
-    os.system("chmod +x /data/data/com.termux/files/home/things/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
-    os.system("chmod +x /data/data/com.termux/files/home/things/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh")
+    os.system("chmod +x ~/things/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
+    os.system("chmod +x ~/things/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh")
     aliases = [
         'alias pythonserver="python3 -m http.server 8080"',
         'alias cls="clear"',
         'alias bat="batcat"',
         'alias cat="/usr/bin/cat"',
-        'alias autoserver="bash /data/data/com.termux/files/home/things/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh"',
-        'alias autodownload="bash /data/data/com.termux/files/home/things/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh"',
+        'alias autoserver="bash ~/things/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh"',
+        'alias autodownload="bash ~/things/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh"',
         'alias temp="touch temp"',
         'alias mtemp="nano temp"',
         'alias rm%="rm -f temp"',
-		'alias autosclose="python3 /home/suprem/Documents/commandshortcuts//autoserveranddownloading/autoserverclose.py"'
+		'alias autosclose="python3 ~/things/commandshortcuts//autoserveranddownloading/autoserverclose.py"'
     ]
     for alias in aliases:
         os.system(f"echo '{alias}' >> ~/.zshrc")
@@ -132,27 +132,27 @@ def other():
     os.system("git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting")
     os.system("git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-history-substring-search")
     os.system("git clone https://github.com/supremXD/commandshortcuts")
-    os.system("mkdir -p Documents/commandshortcuts")
-    os.system("mv commandshortcuts/* Documents/commandshortcuts/")
+    os.system("mkdir -p ~/Documents/commandshortcuts")
+    os.system("mv commandshortcuts/* ~/Documents/commandshortcuts/")
     os.system("rm -rf commandshortcuts")
-    os.system("sudo chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
-    os.system("sudo chmod +x Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
+    os.system("sudo chmod +x ~/Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
+    os.system("sudo chmod +x ~/Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
     aliases = [
         'alias pythonserver="python3 -m http.server 8080"',
         'alias cls="clear"',
         'alias bat="batcat"',
         'alias cat="/usr/bin/cat"',
-        'alias cptoserver="python3 /home/suprem/Documents/commandshortcuts/cptoserver.py"',
-        'alias mvtoserver="python3 /home/suprem/Documents/commandshortcuts/mvtoserver.py"',
+        'alias cptoserver="python3 ~/Documents/commandshortcuts/cptoserver.py"',
+        'alias mvtoserver="python3 ~/Documents/commandshortcuts/mvtoserver.py"',
         'alias apacheup="sudo service apache2 start"',
         'alias apachedown="sudo service apache2 stop"',
         'alias debinstall="sudo dpkg -i"',
-        'alias autoserver="bash /home/suprem/Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh"',
-        'alias autodownload="bash /home/suprem/Documents/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh"',
+        'alias autoserver="bash ~/Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh"',
+        'alias autodownload="bash ~/Documents/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh"',
         'alias temp="touch temp"',
         'alias mtemp="nano temp"',
         'alias rm%="rm -f temp"',
-		'alias autosclose="python3 /home/suprem/Documents/commandshortcuts//autoserveranddownloading/autoserverclose.py"'
+		'alias autosclose="python3 ~/Documents/commandshortcuts//autoserveranddownloading/autoserverclose.py"'
     ]
     for alias in aliases:
         os.system(f"echo '{alias}' >> ~/.zshrc")
