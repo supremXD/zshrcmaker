@@ -2,15 +2,6 @@
 
 import os, sys
 
-
-# Check directory.
-home_dir = os.path.expanduser("~")
-current_dir = os.getcwd()
-
-if os.path.abspath(current_dir) != os.path.abspath(home_dir):
-    print("Copy this file to your /home/ directory and try again.")
-    sys.exit(1)
-
 # Banner.
 banner = """
 |___  /  ___| | | | ___ /  __ \ |  \/  |/ _ \| | / |  ___| ___ |
