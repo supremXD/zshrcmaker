@@ -87,15 +87,7 @@ def kali():
     os.system("rm -rf commandshortcuts")
     os.system("sudo chmod +x ~/Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
     os.system("sudo chmod +x ~/Documents/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh")
-
-    os.system("mkdir -p ~/.local/share/fonts")
-    os.chdir(os.path.expanduser("~/.local/share/fonts/"))
-    os.system("wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip")
-    os.system("unzip JetBrainsMono.zip")
-    os.system("rm JetBrainsMono.zip")
-    os.system("fc-cache -fv")
-    os.chdir(os.path.expanduser("~"))
-
+  
     aliases = [
         'alias pythonserver="python3 -m http.server 8080"',
         'alias cls="clear"',
@@ -137,14 +129,6 @@ def termux():
     os.system("chmod +x ~/things/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
     os.system("chmod +x ~/things/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh")
 
-    os.makedirs(os.path.expanduser("~/.local/share/fonts/"), exist_ok=True)
-    os.chdir(os.path.expanduser("~/.local/share/fonts/"))
-    os.system("wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip")
-    os.system("unzip JetBrainsMono.zip")
-    os.system("rm JetBrainsMono.zip")
-    os.system("fc-cache -fv")
-    os.chdir(os.path.expanduser("~"))
-
     aliases = [
         'alias pythonserver="python3 -m http.server 8080"',
         'alias cls="clear"',
@@ -177,14 +161,6 @@ def other():
     os.system("rm -rf commandshortcuts")
     os.system("sudo chmod +x ~/Documents/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
     os.system("sudo chmod +x ~/Documents/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh")
-
-    os.makedirs(os.path.expanduser("~/.local/share/fonts/"), exist_ok=True)
-    os.chdir(os.path.expanduser("~/.local/share/fonts/"))
-    os.system("wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip")
-    os.system("unzip JetBrainsMono.zip")
-    os.system("rm JetBrainsMono.zip")
-    os.system("fc-cache -fv")
-    os.chdir(os.path.expanduser("~"))
 
     aliases = [
         'alias pythonserver="python3 -m http.server 8080"',
