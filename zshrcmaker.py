@@ -168,6 +168,10 @@ def other():
     os.system("sudo chmod +x ~/.commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh")
     os.system("sudo chmod +x ~/.commandshortcuts/ip.sh")
     os.system("sudo chmod +x ~/.commandshortcuts/copy_ip.sh")
+    os.system("rm -f ~/.commandshortcuts/autonmap.py")
+    os.system("rm -f ~/.commandshortcuts/extractPorts.sh")
+    os.system("rm -f ~/.commandshortcuts/macfinder.py")
+    os.system("rm -f ~/.commandshortcuts/whichsystem.py")
     aliases = [
         'alias pythonserver="python3 -m http.server 8080"',
         'alias cls="clear"',
