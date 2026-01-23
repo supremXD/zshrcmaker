@@ -166,7 +166,8 @@ def other():
     os.system("rm -rf commandshortcuts")
     os.system("sudo chmod +x ~/.commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
     os.system("sudo chmod +x ~/.commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh")
-
+    os.system("sudo chmod +x ~/.commandshortcuts/ip.sh")
+    os.system("sudo chmod +x ~/.commandshortcuts/copy_ip.sh")
     aliases = [
         'alias pythonserver="python3 -m http.server 8080"',
         'alias cls="clear"',
@@ -183,7 +184,10 @@ def other():
         'alias temp="touch temp"',
         'alias mtemp="nano temp"',
         'alias rm%="rm -f temp"',
-        'alias autosclose="python3 ~/.commandshortcuts/autoserveranddownloading/autoserverclose.py"'
+        'alias autosclose="python3 ~/.commandshortcuts/autoserveranddownloading/autoserverclose.py"',
+        'alias copyip="bash ~/.commandshortcuts/copy_ip.sh"',
+        'alias contar="python3 ~/.commandshortcuts/contar.py"',
+        'alias txttopdf="python3 ~/.commandshortcuts/txttopdf.py"'
     ]
     for alias in aliases:
         os.system(f"echo '{alias}' >> ~/.zshrc")
