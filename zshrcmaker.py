@@ -201,5 +201,5 @@ def other():
     print("\n[✔] Installation for Debian completed!\n")
     exit()
 
-# Iniciar
+# Start zshrcmaker
 menu()
