@@ -192,6 +192,7 @@ def other():
         'alias copyip="bash ~/.commandshortcuts/copy_ip.sh"',
         'alias contar="python3 ~/.commandshortcuts/contar.py"',
         'alias txttopdf="python3 ~/.commandshortcuts/txttopdf.py"'
+        'alias pdfconverter="python3 ~/.commandshortcuts/pdfconverter.py"'
     ]
     for alias in aliases:
         os.system(f"echo '{alias}' >> ~/.zshrc")
