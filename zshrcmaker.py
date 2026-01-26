@@ -109,6 +109,7 @@ def kali():
         'alias macfinder="python3 ~/.commandshortcuts/macfinder.py"',
         'alias autonmap="python3 ~/.commandshortcuts/autonmap.py"',
         'alias autosclose="python3 ~/.commandshortcuts/autoserveranddownloading/autoserverclose.py"'
+        'alias pdfconverter="python3 ~/.commandshortcuts/pdfconverter.py"'
     ]
     for alias in aliases:
         os.system(f"echo '{alias}' >> ~/.zshrc")
