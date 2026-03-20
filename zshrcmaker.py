@@ -105,7 +105,9 @@ def kali():
         'alias rm%="rm -f temp"',
         'alias macfinder="python3 ~/.commandshortcuts/macfinder.py"',
         'alias autonmap="python3 ~/.commandshortcuts/autonmap.py"',
-        'alias autosclose="python3 ~/.commandshortcuts/autoserveranddownloading/autoserverclose.py"'
+        'alias autosclose="python3 ~/.commandshortcuts/autoserveranddownloading/autoserverclose.py"',
+        'alias showip="python3 ~/.commandshortcuts/ip.py"',
+        'alias copyip="python3 ~/.commandshortcuts/ip.py -c"',
         'alias pdfconverter="python3 ~/.commandshortcuts/pdfconverter.py"'
     ]
     for alias in aliases:
@@ -159,8 +161,6 @@ def other():
     os.system("mkdir -p ~/.commandshortcuts")
     os.system("mv commandshortcuts/* ~/.commandshortcuts/")
     os.system("rm -rf commandshortcuts")
-    os.system("sudo chmod +x ~/.commandshortcuts/ip.sh")
-    os.system("sudo chmod +x ~/.commandshortcuts/copy_ip.sh")
     os.system("rm -f ~/.commandshortcuts/autonmap.py")
     os.system("rm -f ~/.commandshortcuts/extractPorts.sh")
     os.system("rm -f ~/.commandshortcuts/macfinder.py")
@@ -181,7 +181,8 @@ def other():
         'alias mtemp="nano temp"',
         'alias rm%="rm -f temp"',
         'alias autosclose="python3 ~/.commandshortcuts/autoserveranddownloading/autoserverclose.py"',
-        'alias copyip="bash ~/.commandshortcuts/copy_ip.sh"',
+        'alias showip="python3 ~/.commandshortcuts/ip.py"',
+        'alias copyip="python3 ~/.commandshortcuts/ip.py -c"',
         'alias contar="python3 ~/.commandshortcuts/contar.py"',
         'alias txttopdf="python3 ~/.commandshortcuts/txttopdf.py"'
         'alias pdfconverter="python3 ~/.commandshortcuts/pdfconverter.py"'
