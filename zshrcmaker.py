@@ -86,8 +86,6 @@ def kali():
     os.system("mkdir -p ~/.commandshortcuts")
     os.system("mv commandshortcuts/* ~/.commandshortcuts/")
     os.system("rm -rf commandshortcuts")
-    os.system("sudo chmod +x ~/.commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
-    os.system("sudo chmod +x ~/.commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh")
   
     aliases = [
         'alias pythonserver="python3 -m http.server 8080"',
@@ -100,9 +98,8 @@ def kali():
         'alias apachedown="sudo service apache2 stop"',
         'alias wichsystem="python3 ~/.commandshortcuts/whichsystem.py"',
         'alias debinstall="sudo dpkg -i"',
-        'alias autoserver="bash ~/.commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh"',
-        'alias autoserverc="python3 ~/.commandshortcuts/autoserveranddownloading/autoserver/autoserverc.py"',
-        'alias autodownload="bash ~/.commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh"',
+        'alias autoserver="python3 ~/.commandshortcuts/autoserveranddownloading/autoserver.py"',
+        'alias autodownload="python3 ~/.commandshortcuts/autoserveranddownloading/autodownload.py"',
         'alias temp="touch temp"',
         'alias mtemp="nano temp"',
         'alias rm%="rm -f temp"',
@@ -130,17 +127,14 @@ def termux():
     os.system("mkdir -p ~/things/commandshortcuts")
     os.system("mv commandshortcuts/* ~/things/commandshortcuts/")
     os.system("rm -rf commandshortcuts")
-    os.system("chmod +x ~/things/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
-    os.system("chmod +x ~/things/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh")
 
     aliases = [
         'alias pythonserver="python3 -m http.server 8080"',
         'alias cls="clear"',
         'alias bat="batcat"',
         'alias cat="/usr/bin/cat"',
-        'alias autoserver="bash ~/things/commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh"',
-        'alias autoserverc="python3 ~/.commandshortcuts/autoserveranddownloading/autoserver/autoserverc.py"',
-        'alias autodownload="bash ~/things/commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh"',
+        'alias autoserver="python3 ~/.commandshortcuts/autoserveranddownloading/autoserver.py"',
+        'alias autodownload="python3 ~/.commandshortcuts/autoserveranddownloading/autodownload.py"',
         'alias temp="touch temp"',
         'alias mtemp="nano temp"',
         'alias rm%="rm -f temp"',
@@ -165,8 +159,6 @@ def other():
     os.system("mkdir -p ~/.commandshortcuts")
     os.system("mv commandshortcuts/* ~/.commandshortcuts/")
     os.system("rm -rf commandshortcuts")
-    os.system("sudo chmod +x ~/.commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh")
-    os.system("sudo chmod +x ~/.commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh")
     os.system("sudo chmod +x ~/.commandshortcuts/ip.sh")
     os.system("sudo chmod +x ~/.commandshortcuts/copy_ip.sh")
     os.system("rm -f ~/.commandshortcuts/autonmap.py")
@@ -183,9 +175,8 @@ def other():
         'alias apacheup="sudo service apache2 start"',
         'alias apachedown="sudo service apache2 stop"',
         'alias debinstall="sudo dpkg -i"',
-        'alias autoserver="bash ~/.commandshortcuts/autoserveranddownloading/autoserver/autoserver.sh"',
-        'alias autoserverc="python3 ~/.commandshortcuts/autoserveranddownloading/autoserver/autoserverc.py"',
-        'alias autodownload="bash ~/.commandshortcuts/autoserveranddownloading/autodownload/autodownload.sh"',
+        'alias autoserver="python3 ~/.commandshortcuts/autoserveranddownloading/autoserver.py"',
+        'alias autodownload="python3 ~/.commandshortcuts/autoserveranddownloading/autodownload.py"',
         'alias temp="touch temp"',
         'alias mtemp="nano temp"',
         'alias rm%="rm -f temp"',
