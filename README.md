@@ -1,17 +1,17 @@
 # INSTALLATION.
 + Instalation for Debian based OS.
 ```bash
+sudo apt install zsh wget git python3 -y
 git clone https://github.com/supremXD/zshrcmaker
 sudo apt update
-sudo apt install zsh wget git python3 -y
 cd zshrcmaker
 python3 zshrcmaker.py
 ```
 + Instalation for Termux.
 ```bash
+pkg install zsh wget git python3 -y
 git clone https://github.com/supremXD/zshrcmaker
 pkg update
-pkg install zsh wget git python3 -y
 cd zshrcmaker
 python3 zshrcmaker.py
 ```
