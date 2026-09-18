@@ -1,7 +1,6 @@
 #Version 3.0
 
-import os, sys
-
+import os, subprocess
 # Banner.
 banner = """
 |___  /  ___| | | | ___ /  __ \ |  \/  |/ _ \| | / |  ___| ___ |
@@ -77,7 +76,7 @@ def menu():
 
 # Instalation for kali linux.
 def kali():
-    os.system('sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"')
+    os.system('sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended')
     os.system("git clone https://github.com/amstrad/oh-my-matrix ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/oh-my-matrix")
     os.system("git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions")
     os.system("git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting")
@@ -109,11 +108,20 @@ def kali():
         'alias showip="python3 ~/.commandshortcuts/ip.py"',
         'alias copyip="python3 ~/.commandshortcuts/ip.py -c"',
         'alias pdfconverter="python3 ~/.commandshortcuts/pdfconverter.py"'
+        'alias lsinterfaces="python3 ~/.commandshortcuts/list_interfaces.py"'
     ]
     for alias in aliases:
         os.system(f"echo '{alias}' >> ~/.zshrc")
 
     os.system("clear")
+    default_shell = input("Do you want to make zsh your default shell? (y/n)-->> ").strip().lower()
+    if default_shell == "y":
+        zsh_path = subprocess.run(["which", "zsh"], capture_output=True, text=True).stdout.strip()
+        os.system(f"chsh -s {zsh_path}")
+        os.system("clear")
+    if default_shell == "n":
+        os.system("clear")
+    
     add_plugins_to_zshrc()
     print("\n[✔] Installation for Kali completed!\n")
     exit()
@@ -152,7 +160,7 @@ def termux():
 
 # Instalation for other OS based in debian.
 def other():
-    os.system('sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"')
+    os.system('sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended')
     os.system("git clone https://github.com/amstrad/oh-my-matrix ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/oh-my-matrix")
     os.system("git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions")
     os.system("git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting")
@@ -186,11 +194,21 @@ def other():
         'alias contar="python3 ~/.commandshortcuts/contar.py"',
         'alias txttopdf="python3 ~/.commandshortcuts/txttopdf.py"'
         'alias pdfconverter="python3 ~/.commandshortcuts/pdfconverter.py"'
+        'alias copy="xclip -selection clipboard -rmlastnl"'
+        'alias lsinterfaces="python3 ~/.commandshortcuts/list_interfaces.py"'
     ]
     for alias in aliases:
         os.system(f"echo '{alias}' >> ~/.zshrc")
-
+    
     os.system("clear")
+    default_shell = input("Do you want to make zsh your default shell? (y/n)-->> ").strip().lower()
+    if default_shell == "y":
+        zsh_path = subprocess.run(["which", "zsh"], capture_output=True, text=True).stdout.strip()
+        os.system(f"chsh -s {zsh_path}")
+        os.system("clear")
+    if default_shell == "n":
+        os.system("clear")
+
     add_plugins_to_zshrc()
     print("\n[✔] Installation for Debian completed!\n")
     exit()
