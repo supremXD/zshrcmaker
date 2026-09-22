@@ -99,15 +99,14 @@ def kali():
         'alias debinstall="sudo dpkg -i"',
         'alias autoserver="python3 ~/.commandshortcuts/autoserveranddownloading/autoserver.py"',
         'alias autodownload="python3 ~/.commandshortcuts/autoserveranddownloading/autodownload.py"',
-        'alias temp="touch temp"',
-        'alias mtemp="nano temp"',
-        'alias rm%="rm -f temp"',
         'alias macfinder="python3 ~/.commandshortcuts/macfinder.py"',
         'alias autonmap="python3 ~/.commandshortcuts/autonmap.py"',
         'alias autosclose="python3 ~/.commandshortcuts/autoserveranddownloading/autoserverclose.py"',
         'alias showip="python3 ~/.commandshortcuts/ip.py"',
         'alias copyip="python3 ~/.commandshortcuts/ip.py -c"',
-        'alias pdfconverter="python3 ~/.commandshortcuts/pdfconverter.py"'
+        'alias contar="python3 ~/.commandshortcuts/contar.py"',
+        'alias pdfconverter="python3 ~/.commandshortcuts/pdfconverter.py"',
+        'alias copy="xclip -selection clipboard -rmlastnl"',
         'alias lsinterfaces="python3 ~/.commandshortcuts/list_interfaces.py"'
     ]
     for alias in aliases:
@@ -145,9 +144,6 @@ def termux():
         'alias cat="/usr/bin/cat"',
         'alias autoserver="python3 ~/.commandshortcuts/autoserveranddownloading/autoserver.py"',
         'alias autodownload="python3 ~/.commandshortcuts/autoserveranddownloading/autodownload.py"',
-        'alias temp="touch temp"',
-        'alias mtemp="nano temp"',
-        'alias rm%="rm -f temp"',
         'alias autosclose="python3 ~/things/commandshortcuts/autoserveranddownloading/autoserverclose.py"'
     ]
     for alias in aliases:
@@ -185,9 +181,6 @@ def other():
         'alias debinstall="sudo dpkg -i"',
         'alias autoserver="python3 ~/.commandshortcuts/autoserveranddownloading/autoserver.py"',
         'alias autodownload="python3 ~/.commandshortcuts/autoserveranddownloading/autodownload.py"',
-        'alias temp="touch temp"',
-        'alias mtemp="nano temp"',
-        'alias rm%="rm -f temp"',
         'alias autosclose="python3 ~/.commandshortcuts/autoserveranddownloading/autoserverclose.py"',
         'alias showip="python3 ~/.commandshortcuts/ip.py"',
         'alias copyip="python3 ~/.commandshortcuts/ip.py -c"',
