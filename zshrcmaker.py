@@ -133,8 +133,8 @@ def termux():
     os.system("git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting")
     os.system("git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-history-substring-search")
     os.system("git clone https://github.com/supremXD/commandshortcuts")
-    os.system("mkdir -p ~/things/commandshortcuts")
-    os.system("mv commandshortcuts/* ~/things/commandshortcuts/")
+    os.system("mkdir -p ~/.commandshortcuts")
+    os.system("mv commandshortcuts/* ~/.commandshortcuts/")
     os.system("rm -rf commandshortcuts")
 
     aliases = [
@@ -200,6 +200,12 @@ def other():
         os.system(f"chsh -s {zsh_path}")
         os.system("clear")
     if default_shell == "n":
+        os.system("clear")
+    docker_fix = input("Are you going to use docker? (To fix the showip command) (y/n)-->> ").strip().lower()
+    if docker_fix == "y":
+        os.system("mv ~/.commandshortcuts/ip_docker_fix.py ~/.commandshortcuts/ip.py")
+        os.system("clear")
+    if docker_fix == "n":
         os.system("clear")
 
     add_plugins_to_zshrc()
